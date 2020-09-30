@@ -1,0 +1,42 @@
+$font-cursive: 'Pinyon Script', cursive;
+$border: solid black 10px;
+$backgr-img: url(https://previews.dropbox.com/p/thumb/AA5ZyhCgrR3Baxc3vTRQ6YrFx6Xz0ry0HwtfpOiHTKJH3vTIGdZUHQqHsudCeKZ7CW7Ycp2uXB2a51kSK1iuLpdUpSJXpPh2hHMImPhpQrMtTHoLg1n6TJf6VIwZWABd_BXyjeN8qV3hitilxyIMleS4f8xZKQwE9euZRiJmwTagL0ll_8Ym1PDHsY_fP6nHL3_JHm5YWRPmmGJqOPTwAXGkb5r8-tG5mOWJQ4T2jhSn5GN6bJL3nynDlX3L1aOfByEvXoFGPA6XhoxKE_HYYGw-rLI7g4r92BypsAZG-dnsCR8mvUydXb4Dk3V9PEgjXvtv3QtVaypWx5dF8vcfMtlb/p.jpeg?fv_content=true&size_mode=5) ;
+
+
+html {
+    width: 100%;
+    background-color: rgb(253, 253, 255);
+    box-sizing: border-box;
+}
+
+.top {
+    font-family: $font-cursive;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    background-image: $backgr-img;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.middle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    .pic {
+        max-width: 300px;
+    }
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(190, 146, 146);
+}
