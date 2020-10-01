@@ -20,17 +20,20 @@ html {
 .middle {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 10px;
 }
 
-.middle .pic {
+img {
   max-width: 300px;
+}
+
+img .container {
+  max-width: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (50px)[2];
+      grid-template-rows: repeat(2, 50px);
 }
 
 .bottom {
