@@ -24,14 +24,18 @@ html {
 .middle {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
-    row-gap: 10px;
-    .pic {
-        max-width: 300px;
+}
+
+img {
+    max-width: 300px;
+    .container {
+        max-width: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 50px);
     }
 }
+
 
 .bottom {
     position: fixed;
